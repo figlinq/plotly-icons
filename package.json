@@ -1,5 +1,5 @@
 {
-  "name": "plotly-icons",
+  "name": "@figlinq/plotly-icons",
   "description": "set of plotly icons",
   "version": "2.0.0",
   "author": "Plotly Team",
@@ -47,5 +47,8 @@
     "clean": "rimraf lib && rimraf src/components/*.js",
     "generate": "yarn run clean && node scripts/generate.js",
     "prepublishOnly": "mkdirp lib && babel src --out-dir lib"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
