@@ -1,6 +1,6 @@
 # plotly-icons
 
-> Icon set used with Plotly Chart Studio
+> Icon set used with React Chart Editor
 
 ## Usage
 
@@ -16,4 +16,4 @@
 
 ## License
 
-&copy; 2017 Plotly, Inc. MIT License.
+&copy; 2022 FiglinQ, Inc. MIT License.
