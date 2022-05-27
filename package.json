@@ -48,6 +48,10 @@
     "generate": "yarn run clean && node scripts/generate.js",
     "prepublishOnly": "mkdirp lib && babel src --out-dir lib"
   },
+  "volta": {
+    "node": "16.14.0",
+    "yarn": "1.22.18"
+  },
   "directories": {
     "lib": "lib"
   }
