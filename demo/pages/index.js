@@ -1,9 +1,9 @@
-import * as PlotlyIcons from 'plotly-icons';
+import * as PlotlyIcons from '@figlinq/plotly-icons';
 import React from 'react';
 
 import Head from 'next/head';
 
-const Icons = Object.entries(PlotlyIcons).sort(function(a, b) {
+const Icons = Object.entries(PlotlyIcons).sort(function (a, b) {
   if (a[0] < b[0]) return -1;
   if (a[0] > b[0]) return 1;
   return 0;
@@ -12,7 +12,7 @@ export default () => (
   <div
     style={{
       fontFamily: 'sans-serif',
-      padding: '40px 0'
+      padding: '40px 0',
     }}
   >
     <Head>
