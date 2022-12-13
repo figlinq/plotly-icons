@@ -77,7 +77,7 @@ function generator(options) {
             path.parse(componentPath).dir,
             iconBaseComponentPath
           )}`,
-          content: svgDomElement.innerHTML,
+          content: svgDomElement.innerHTML.replace('class=', 'className='),
         })
       );
     }
