@@ -33,7 +33,7 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "rimraf": "^3.0.2",
-    "svgo": "^0.7.2"
+    "svgo": "^3.0.2"
   },
   "homepage": "https://github.com/plotly/plotly-icons#readme",
   "keywords": [
