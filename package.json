@@ -9,7 +9,7 @@
   "scripts": {
     "clean": "rimraf lib && rimraf src/components/*.js",
     "generate": "yarn run clean && node scripts/generate.js",
-    "prepublishOnly": "mkdirp lib && babel src --out-dir lib"
+    "prepublishOnly": "mkdirp lib && babel src --out-dir temp && uglifyjs-folder temp -e -x .js -o lib && rimraf temp"
   },
   "dependencies": {
     "mdi-react": "9.0.0",
@@ -33,7 +33,8 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "rimraf": "^3.0.2",
-    "svgo": "^0.7.2"
+    "svgo": "^0.7.2",
+    "uglifyjs-folder": "^3.1.4"
   },
   "homepage": "https://github.com/plotly/plotly-icons#readme",
   "keywords": [
