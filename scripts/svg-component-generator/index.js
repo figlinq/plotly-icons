@@ -2,7 +2,7 @@
 const path = require('path');
 const glob = require('glob');
 const fs = require('fs-extra');
-const svgo = require('svgo');
+const {optimize, extendDefaultPlugins} = require('svgo');
 const nunjucks = require('nunjucks');
 const _ = require('lodash');
 const helpers = require('./helpers');
@@ -34,8 +34,6 @@ function generator(options) {
 
   const iconBaseComponentPath = path.join(componentDestDir, 'IconBase.js');
 
-  const svgoInstance = new svgo();
-
   glob(svgSrcDir + '/**/*.svg', async (err, svgPaths) => {
     if (err) {
       throw err;
@@ -54,7 +52,20 @@ function generator(options) {
       const componentName = helpers.getComponentNameFromPath(componentPath);
 
       const svg = fs.readFileSync(svgPath, 'utf-8');
-      const optimizedSvg = await helpers.optimizeSvg(svgoInstance, svg);
+      const optimizedSvg = optimize(svg, {
+        // optional but recommended field
+        path: svgPath,
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                removeViewBox: false,
+              },
+            },
+          },
+        ],
+      }).data;
 
       const svgDomElement = helpers.createDomElement(optimizedSvg);
       helpers.camelizeElementAttributes(svgDomElement);
