@@ -12,27 +12,26 @@
     "prepublishOnly": "mkdirp lib && babel src --out-dir lib"
   },
   "dependencies": {
-    "mdi-react": "9.0.0",
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "@babel/cli": "7.19.3",
-    "@babel/core": "7.20.5",
-    "@babel/node": "7.20.5",
+    "@babel/cli": "7.22.15",
+    "@babel/core": "7.22.20",
+    "@babel/node": "7.22.19",
     "@babel/plugin-proposal-export-default-from": "^7.18.10",
     "@babel/plugin-proposal-export-namespace-from": "^7.18.9",
-    "@babel/preset-env": "7.20.2",
-    "@babel/preset-react": "7.18.6",
+    "@babel/preset-env": "7.22.20",
+    "@babel/preset-react": "7.22.15",
     "fs": "0.0.1-security",
     "fs-extra": "^11.1.0",
     "glob": "^8.0.3",
     "jsdom": "^20.0.3",
     "lodash": "^4.17.20",
-    "mkdirp": "^1.0.4",
-    "nunjucks": "^3.2.3",
+    "mkdirp": "^3.0.1",
+    "nunjucks": "^3.2.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.1",
     "svgo": "^3.0.2"
   },
   "homepage": "https://github.com/plotly/plotly-icons#readme",
@@ -55,7 +54,7 @@
     "not IE 11"
   ],
   "volta": {
-    "node": "16.14.0",
+    "node": "20.7.0",
     "yarn": "1.22.19"
   },
   "directories": {
