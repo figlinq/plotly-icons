@@ -1,5 +1,5 @@
 export AutoscaleIcon from './AutoscaleIcon.js';
-export EmbedIconIcon from './EmbedIconIcon.js';
+export EmbedIcon from './EmbedIcon.js';
 export FilingCabinetIcon from './FilingCabinetIcon.js';
 export ForkEditIcon from './ForkEditIcon.js';
 export ForkIcon from './ForkIcon.js';

@@ -5,7 +5,7 @@
 ## Usage
 
 * Install the module with `npm install` or `yarn install`.
-* Import into your project like so: `import {CarretDownIcon} from 'plotly-icons';`
+* Import into your project like so: `import {PlotScatterIcon} from 'plotly-icons';`
 * Add extra classes by adding a className to the imported icon.
 
 ## Development
