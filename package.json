@@ -41,6 +41,7 @@
   ],
   "license": "ISC",
   "main": "lib/index.js",
+  "module": "lib/index.js",
   "peerDependencies": {
     "react": ">15",
     "react-dom": ">15"

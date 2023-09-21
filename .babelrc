@@ -2,11 +2,12 @@
   "presets": [
     [
       "@babel/preset-react",
-      {
-        "runtime": "automatic"
-      }
+      {"runtime": "automatic"}
     ],
-    "@babel/env"
+    [
+      "@babel/env",
+      {"modules": false}
+    ]
   ],
   "plugins": [
     "@babel/plugin-proposal-export-default-from",
