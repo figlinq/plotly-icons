@@ -12,6 +12,7 @@
 
 1. Export SVG files with "Inline Styles", as the script can't parse classes in svg. Ensure the files don't have fields like `data-name` that seem to be unsupported by React.
 2. Run `npm run generate` to convert SVG icons into React components.
+   - Replace class with className in all generated React components (TODO: automate this).
 3. Run `npm run prepublishOnly` and ensure there are no errors.
 
 ## License
